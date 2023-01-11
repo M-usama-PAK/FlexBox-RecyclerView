@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         flexboxLayoutManager.justifyContent=JustifyContent.CENTER
         flexboxLayoutManager.flexDirection=FlexDirection.ROW
         binding.rvMain.layoutManager=FlexboxLayoutManager(this)
-        binding.rvMain.adapter = TagAdapter(initArray())
+        binding.rvMain.adapter = TagAdapter(initArray(),this)
     }
 
     fun initArray():List<String>{
